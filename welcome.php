@@ -8,7 +8,6 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username']))
   exit;
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -75,7 +74,8 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username']))
               </div>
             </div>
 
-            
+     <footer>       
     <p><a href="logout.php" class="btn btn-danger">Sign Out of Your Account</a></p>
+</footer>
 </body>
 </html>
