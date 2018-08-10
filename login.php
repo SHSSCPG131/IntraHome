@@ -73,19 +73,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     mysqli_close($link);
 }
 ?>
- 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Login</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
-    <style type="text/css">
-        body{ font: 14px sans-serif; text-align:centre; }
-        .wrapper{ width: 800px; padding: 100px; margin:0 auto; }
-    </style>
-</head>
-<body>
+<?php include('header.php');?>   
     <div class="wrapper">
         <h2>Login</h2>
         <p>Please fill in your credentials to login.</p>
@@ -106,5 +94,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
         </form>
     </div>    
+    <!-- Scripts -->
+			<script src="Start_Page/assets/js/jquery.min.js"></script>
+			<script src="Start_Page/assets/js/browser.min.js"></script>
+			<script src="Start_Page/assets/js/breakpoints.min.js"></script>
+			<script src="Start_Page/assets/js/util.js"></script>
+			<script src="Start_Page/assets/js/main.js"></script>
 </body>
 </html>

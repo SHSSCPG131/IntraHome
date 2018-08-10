@@ -3,9 +3,6 @@
 
 #define WIFI_SSID "Your wifi SSID"
 #define WIFI_PASSWORD "your wifi password"
-
-//this firebase project was deleted
-//you'll need to enter your own firebase info
 #define FIREBASE_HOST "newshss-c303e.firebaseio.com"
 #define FIREBASE_AUTH "L5e2ZNPkWzGHUP2PZhqOgsRDKIks1T4VUGn4NTA2"
 int ledPower = 5;
@@ -15,7 +12,8 @@ void setup() {
 
   WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
   Serial.print("connecting");
-  while (WiFi.status() != WL_CONNECTED) {
+  while (WiFi.status() != WL_CONNECTED) 
+  {
     Serial.print(".");
     delay(500);
   }
